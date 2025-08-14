@@ -1,0 +1,17 @@
+name: cgcnn-env
+channels: [pytorch, conda-forge, defaults]
+dependencies:
+  - python=3.10
+  - pytorch>=2.2
+  - cpuonly  # remove if you want CUDA; replace with cudatoolkit version
+  - scikit-learn
+  - pandas
+  - numpy
+  - pymatgen
+  - ase
+  - matplotlib
+  - tqdm
+  - pip
+  - pip:
+      - rdkit-pypi==2022.9.5  # optional; keep minimal
+
